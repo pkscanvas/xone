@@ -1,0 +1,41 @@
+// Sources adopted from the worldmonitor feed corpus (github.com/koala73/worldmonitor).
+// Every URL below was fetched live and confirmed to return a parseable, currently
+// updated feed before being added. Publishers already present in
+// CURRENT_APP_FEED_RECORDS are excluded so each publisher keeps one catalog placement.
+#[rustfmt::skip]
+pub const WORLDMONITOR_FEED_RECORDS: &[DefaultFeed] = &[
+    DefaultFeed { title: "CBC News", url: "https://www.cbc.ca/webfeed/rss/rss-world", category: "General News", region: Some("North America"), dedup_key: "worldmonitor:7f22d08cb2d09014", origin: "worldmonitor" },
+    DefaultFeed { title: "The Globe and Mail", url: "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/canada/?outputType=xml", category: "General News", region: Some("North America"), dedup_key: "worldmonitor:8910907f24372828", origin: "worldmonitor" },
+    DefaultFeed { title: "National Post", url: "https://nationalpost.com/feed/", category: "General News", region: Some("North America"), dedup_key: "worldmonitor:a8d571219a0a229a", origin: "worldmonitor" },
+    DefaultFeed { title: "Global News", url: "https://globalnews.ca/feed/", category: "General News", region: Some("North America"), dedup_key: "worldmonitor:2e21ce61246bbcee", origin: "worldmonitor" },
+    DefaultFeed { title: "Der Spiegel", url: "https://www.spiegel.de/schlagzeilen/tops/index.rss", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:d24351aa89c1d2e8", origin: "worldmonitor" },
+    DefaultFeed { title: "NRC", url: "https://www.nrc.nl/rss/", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:9862c0a99c922d49", origin: "worldmonitor" },
+    DefaultFeed { title: "Yle News", url: "https://yle.fi/rss/news", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:e2518320660adba6", origin: "worldmonitor" },
+    DefaultFeed { title: "LRT English", url: "https://www.lrt.lt/en/news-in-english?rss", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:0a64b34f5e7d0e63", origin: "worldmonitor" },
+    DefaultFeed { title: "ERR News", url: "https://news.err.ee/rss", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:a24b9283531d1e1d", origin: "worldmonitor" },
+    DefaultFeed { title: "OC Media", url: "https://oc-media.org/feed/", category: "General News", region: Some("Europe"), dedup_key: "worldmonitor:baa484bcac143a57", origin: "worldmonitor" },
+    DefaultFeed { title: "Eurasianet", url: "https://eurasianet.org/rss", category: "General News", region: Some("Asia"), dedup_key: "worldmonitor:5f27de3f784dcb15", origin: "worldmonitor" },
+    DefaultFeed { title: "Rappler", url: "https://www.rappler.com/feed/", category: "General News", region: Some("Asia"), dedup_key: "worldmonitor:fd9f0bbd2f8a4906", origin: "worldmonitor" },
+    DefaultFeed { title: "Times of India", url: "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms", category: "General News", region: Some("Asia"), dedup_key: "worldmonitor:ebde77f4f33f0b3b", origin: "worldmonitor" },
+    DefaultFeed { title: "Chosun Ilbo", url: "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml", category: "General News", region: Some("Asia"), dedup_key: "worldmonitor:8d8927e901dd1ca6", origin: "worldmonitor" },
+    DefaultFeed { title: "The Astana Times", url: "https://astanatimes.com/feed/", category: "General News", region: Some("Asia"), dedup_key: "worldmonitor:cbaa406479a3364a", origin: "worldmonitor" },
+    DefaultFeed { title: "Daily Sabah", url: "https://www.dailysabah.com/rss/home-page", category: "General News", region: Some("Middle East"), dedup_key: "worldmonitor:9daf43547801ed6e", origin: "worldmonitor" },
+    DefaultFeed { title: "+972 Magazine", url: "https://www.972mag.com/feed/", category: "General News", region: Some("Middle East"), dedup_key: "worldmonitor:d7fea538e57a24e8", origin: "worldmonitor" },
+    DefaultFeed { title: "Syria Direct", url: "https://syriadirect.org/feed/", category: "General News", region: Some("Middle East"), dedup_key: "worldmonitor:a3db2622a61d5275", origin: "worldmonitor" },
+    DefaultFeed { title: "Egypt Independent", url: "https://www.egyptindependent.com/feed/", category: "General News", region: Some("Middle East"), dedup_key: "worldmonitor:2858e85b5b371299", origin: "worldmonitor" },
+    DefaultFeed { title: "Daily Nation", url: "https://nation.africa/kenya/rss.xml", category: "General News", region: Some("Africa"), dedup_key: "worldmonitor:de262aa22c23749f", origin: "worldmonitor" },
+    DefaultFeed { title: "MyJoyOnline", url: "https://www.myjoyonline.com/feed/", category: "General News", region: Some("Africa"), dedup_key: "worldmonitor:6996cf14e7a6beec", origin: "worldmonitor" },
+    DefaultFeed { title: "RFI Africa", url: "https://www.rfi.fr/en/africa/rss", category: "General News", region: Some("Africa"), dedup_key: "worldmonitor:92877f5e11c85b8a", origin: "worldmonitor" },
+    DefaultFeed { title: "Radio Tamazuj", url: "https://www.radiotamazuj.org/en/feed", category: "General News", region: Some("Africa"), dedup_key: "worldmonitor:8c190c8404a61824", origin: "worldmonitor" },
+    DefaultFeed { title: "Folha de S.Paulo", url: "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml", category: "General News", region: Some("Latin America"), dedup_key: "worldmonitor:a7488b053f0f8451", origin: "worldmonitor" },
+    DefaultFeed { title: "Caracas Chronicles", url: "https://www.caracaschronicles.com/feed/", category: "General News", region: Some("Latin America"), dedup_key: "worldmonitor:214a1cde8be886e7", origin: "worldmonitor" },
+    DefaultFeed { title: "Breaking Defense", url: "https://breakingdefense.com/feed/", category: "Defense/Geopolitics", region: None, dedup_key: "worldmonitor:9d99b44c9eec4f58", origin: "worldmonitor" },
+    DefaultFeed { title: "Tom's Hardware", url: "https://www.tomshardware.com/feeds.xml", category: "Hardware", region: None, dedup_key: "worldmonitor:bc9fd7a3c4403b69", origin: "worldmonitor" },
+    DefaultFeed { title: "Business Insider", url: "https://www.businessinsider.com/rss", category: "Business", region: None, dedup_key: "worldmonitor:a17b0302068db4e1", origin: "worldmonitor" },
+    DefaultFeed { title: "Financial Post", url: "https://financialpost.com/feed/", category: "Finance", region: None, dedup_key: "worldmonitor:9a1a0db1342167b6", origin: "worldmonitor" },
+    DefaultFeed { title: "First Round Review", url: "https://review.firstround.com/articles/rss", category: "Startups & VC", region: None, dedup_key: "worldmonitor:df42e87c08503d4a", origin: "worldmonitor" },
+    DefaultFeed { title: "U.S. Trade Representative", url: "https://ustr.gov/rss.xml", category: "Government", region: None, dedup_key: "worldmonitor:3df3801e7c895e95", origin: "worldmonitor" },
+    DefaultFeed { title: "The Narwhal", url: "https://thenarwhal.ca/feed/", category: "Investigative Journalism", region: None, dedup_key: "worldmonitor:f74b9073e770dd63", origin: "worldmonitor" },
+    DefaultFeed { title: "The Tyee", url: "https://thetyee.ca/rss2.xml", category: "Investigative Journalism", region: None, dedup_key: "worldmonitor:b7a99d67c489993f", origin: "worldmonitor" },
+    DefaultFeed { title: "Sana'a Center", url: "https://sanaacenter.org/feed/", category: "Policy & Think Tanks", region: None, dedup_key: "worldmonitor:ca9307612a9ee008", origin: "worldmonitor" },
+];
