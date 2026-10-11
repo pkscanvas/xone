@@ -18,15 +18,12 @@ Watch both videos on the [Xone website](https://pkscanvas.github.io/xone/#produc
 
 ### The Xone film · 50 seconds
 
-<!-- Inline video: replace the preview link below with the GitHub attachment URL for xone-film-readme.mp4. -->
+https://github.com/user-attachments/assets/ea361bc9-467c-4df3-8886-b2da64fd4b76
 
-[![Watch the Xone film](website/public/assets/xone-narrative-poster.jpg)](https://pkscanvas.github.io/xone/#product)
 
 ### Product walkthrough · 72 seconds
 
-<!-- Inline video: replace the preview link below with the GitHub attachment URL for xone-demo-readme.mp4. -->
-
-[![Watch the product walkthrough](website/public/assets/xone-product-demo-poster.jpg)](https://pkscanvas.github.io/xone/#product)
+https://github.com/user-attachments/assets/e4aa62cf-0d62-45a1-a079-01dd0b9cf221
 
 Product-demo music: “Open Spaces” by Hybridas on [Uppbeat](https://uppbeat.io/c/hybridas). Third-party media retains its own rights; the source-code MIT license does not license the soundtrack for separate redistribution.
 
