@@ -58,10 +58,6 @@ These are planned, not shipped:
 - Decision-model support, such as Jev, for relevance filtering.
 - A relevance model fine-tuned for Xone and bundled for faster filtering without external model setup. TL:DR prose would still need a generative model.
 
-## Publish this project
-
-See [PUBLISHING.md](PUBLISHING.md) for transferring the package to another computer, uploading the extracted source, creating the macOS release, replacing URL placeholders, and enabling GitHub Pages.
-
 ## Development
 
 Install Node.js 22.12+ and Rust with the platform prerequisites for Tauri v2. On macOS, install Xcode Command Line Tools.
