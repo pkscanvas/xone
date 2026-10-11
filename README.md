@@ -8,10 +8,6 @@ An AI-powered information harness that turns the daily flood of news into focuse
 <!-- # weblink here: https://pkscanvas.github.io/xone/ (available after GitHub Pages deployment). -->
 [Website](https://pkscanvas.github.io/xone/) · [Download for macOS](https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg) · [GitHub](https://github.com/pkscanvas/xone) · [MIT License](LICENSE)
 
-![Xone reader in light mode](website/public/assets/reader-light-current.png)
-
-*Screenshots and videos use illustrative content.*
-
 ## Watch Xone
 
 Watch both videos on the [Xone website](https://pkscanvas.github.io/xone/#product).
@@ -29,7 +25,7 @@ Product-demo music: “Open Spaces” by Hybridas on [Uppbeat](https://uppbeat.i
 
 ## Start reading
 
-1. Download `Xone_0.1.0_aarch64.dmg` using the download link above. This package is for **Apple Silicon Macs**.
+1. Download Xone app using the download link above. This package is for **Apple Silicon Macs**.
 2. Open the DMG and drag **Xone** into **Applications**.
 3. Open Xone. If macOS blocks it, open **Apple menu → System Settings → Privacy & Security**, scroll to **Security**, and click **Open Anyway** for Xone. Follow the included **Read Me First** guide. The app is ad-hoc signed and is not notarized.
 4. In **Settings → AI**, connect a local server or save your cloud provider's API key and model.
