@@ -71,7 +71,7 @@ const chapters = [
 // # github repo here — configured for the project repository.
 const githubRepoUrl = "https://github.com/pkscanvas/xone";
 // # download link here — available after publishing the first GitHub Release.
-const downloadUrl = "https://github.com/pkscanvas/xone/releases/latest";
+const downloadUrl = "https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg";
 
 function resolveProjectUrl() {
   if (githubRepoUrl) return githubRepoUrl;
@@ -97,13 +97,14 @@ function Brand() {
   );
 }
 
-function ActionLink({ children, className = "", href, icon: Icon }) {
+function ActionLink({ children, className = "", href, icon: Icon, download = false }) {
   const external = href.startsWith("http");
   return (
     <a
       className={`button ${className}`.trim()}
       href={href}
-      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+      download={download || undefined}
+      {...(external && !download ? { target: "_blank", rel: "noreferrer" } : {})}
     >
       <span>{children}</span>
       {Icon ? <Icon aria-hidden="true" size={17} weight="bold" /> : null}
@@ -118,7 +119,8 @@ export function App() {
   const video = videos[activeVideo];
   const projectUrl = useMemo(resolveProjectUrl, []);
   const githubUrl = projectUrl || "#github-repo-here";
-  const releasesUrl = downloadUrl || import.meta.env.VITE_DOWNLOAD_URL || (projectUrl ? `${projectUrl.replace(/\/$/, "")}/releases/latest` : "#download-link-here");
+  const releasesUrl = projectUrl ? `${projectUrl.replace(/\/$/, "")}/releases/latest` : "#github-repo-here";
+  const installerUrl = downloadUrl || import.meta.env.VITE_DOWNLOAD_URL || (projectUrl ? `${releasesUrl}/download/Xone_0.1.0_aarch64.dmg` : "#download-link-here");
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -137,7 +139,7 @@ export function App() {
           <a href="#intelligence">Intelligence</a>
           <a href="#roadmap">Roadmap</a>
         </nav>
-        <ActionLink className="header-cta" href={releasesUrl} icon={DownloadSimple}>
+        <ActionLink className="header-cta" href={installerUrl} icon={DownloadSimple} download>
           Get Xone
         </ActionLink>
         <button
@@ -161,7 +163,7 @@ export function App() {
           <a href="#intelligence" onClick={closeMenu}>Intelligence</a>
           <a href="#roadmap" onClick={closeMenu}>Roadmap</a>
           <a href={githubUrl} onClick={closeMenu}>GitHub</a>
-          <a href={releasesUrl} onClick={closeMenu}>Get Xone</a>
+          <a href={installerUrl} download onClick={closeMenu}>Get Xone</a>
         </nav>
       </header>
 
@@ -179,7 +181,7 @@ export function App() {
               Xones, bring related stories together, and catch up with cited AI briefings.
             </p>
             <div className="hero-actions">
-              <ActionLink className="button-dark" href={releasesUrl} icon={DownloadSimple}>
+              <ActionLink className="button-dark" href={installerUrl} icon={DownloadSimple} download>
                 Download for macOS
               </ActionLink>
               <ActionLink className="button-light" href={githubUrl} icon={GithubLogo}>
@@ -360,7 +362,7 @@ export function App() {
         <section className="closing-cta section-frame">
           <h2>Make room for the<br />news that matters.</h2>
           <div className="closing-actions">
-            <ActionLink className="button-dark" href={releasesUrl} icon={DownloadSimple}>
+            <ActionLink className="button-dark" href={installerUrl} icon={DownloadSimple} download>
               Download for macOS
             </ActionLink>
             <ActionLink className="button-light" href={githubUrl} icon={ArrowUpRight}>

@@ -18,11 +18,11 @@ This package targets your existing repository. No URL replacement is needed:
 
 - Repository: [https://github.com/pkscanvas/xone](https://github.com/pkscanvas/xone)
 - Planned website: [https://pkscanvas.github.io/xone/](https://pkscanvas.github.io/xone/)
-- Download: [https://github.com/pkscanvas/xone/releases/latest](https://github.com/pkscanvas/xone/releases/latest)
+- Download: [https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg](https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg)
 
 The website address assumes standard GitHub Pages hosting without a custom domain. It becomes available after Pages deployment; the download destination becomes available after publishing the first normal release with the DMG.
 
-The README's video thumbnails, video links, and screenshot use relative paths, so they work without editing account names. GitHub may show a file preview or download for an MP4; the website supplies the full video player.
+The README screenshot and thumbnails use relative paths. Until GitHub attachment URLs are added, the video previews open the website player. For inline README players, upload each MP4 in GitHub's README web editor and place the generated attachment URL on its own line. Repository MP4 paths do not embed a player. GitHub Free limits uploaded videos to 10 MB; use the smaller README copies supplied in the transfer kit. After committing in the web editor, pull the updated README into the local checkout to retain its attachment URLs.
 
 ## 3. Upload the source
 
@@ -54,7 +54,7 @@ On the repository's GitHub page, open **Releases → Draft a new release**. Crea
 - `Xone-github-source.zip`
 - `SHA256SUMS.txt`
 
-Mention Apple Silicon, the external AI provider requirement, and the included first-launch guide in the release notes. Publish it as a normal release, not a prerelease, and select **Set as the latest release** if offered. The website's download button opens `/releases/latest`, where users select the DMG. Before a release is published, this destination will not provide a download. See [GitHub's release documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
+Mention Apple Silicon, the external AI provider requirement, and the included first-launch guide in the release notes. Publish it as a normal release, not a prerelease, and select **Set as the latest release** if offered. The website's download buttons point directly to `/releases/latest/download/Xone_0.1.0_aarch64.dmg`. Before a release is published, this destination will not provide a download. See [GitHub's release documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository).
 
 If you edit the source ZIP after transfer, regenerate its checksum before uploading `SHA256SUMS.txt`; an unchanged supplied ZIP retains its supplied checksum.
 
@@ -77,10 +77,10 @@ In `website/src/App.jsx`, these values are already filled in:
 // # github repo here
 const githubRepoUrl = "https://github.com/pkscanvas/xone";
 // # download link here
-const downloadUrl = "https://github.com/pkscanvas/xone/releases/latest";
+const downloadUrl = "https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg";
 ```
 
-The download button opens the latest release page, where readers can choose the DMG. No further link edits are needed for this repository. To use a direct installer download instead, set `downloadUrl` to `https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg`; update that URL if the asset filename changes.
+The download buttons start the installer download directly. The footer Releases link still opens the release page. Update `downloadUrl` if the installer asset filename changes.
 
 The configured constants take priority. Clearing them enables the existing `VITE_GITHUB_URL` and optional `VITE_DOWNLOAD_URL` build-time alternatives. These values contain public URLs only.
 

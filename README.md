@@ -6,7 +6,7 @@ An AI-powered information harness that turns the daily flood of news into focuse
 
 <!-- # github repo here: https://github.com/pkscanvas/xone -->
 <!-- # weblink here: https://pkscanvas.github.io/xone/ (available after GitHub Pages deployment). -->
-[Website](https://pkscanvas.github.io/xone/) · [Download for macOS](https://github.com/pkscanvas/xone/releases/latest) · [GitHub](https://github.com/pkscanvas/xone) · [MIT License](LICENSE)
+[Website](https://pkscanvas.github.io/xone/) · [Download for macOS](https://github.com/pkscanvas/xone/releases/latest/download/Xone_0.1.0_aarch64.dmg) · [GitHub](https://github.com/pkscanvas/xone) · [MIT License](LICENSE)
 
 ![Xone reader in light mode](website/public/assets/reader-light-current.png)
 
@@ -14,21 +14,25 @@ An AI-powered information harness that turns the daily flood of news into focuse
 
 ## Watch Xone
 
-Click either preview to open its video. Both videos also play on the website.
+Watch both videos on the [Xone website](https://pkscanvas.github.io/xone/#product).
 
 ### The Xone film · 50 seconds
 
-[![Watch the Xone film](website/public/assets/xone-narrative-poster.jpg)](website/public/assets/xone-narrative-50s-v4.mp4)
+<!-- Inline video: replace the preview link below with the GitHub attachment URL for xone-film-readme.mp4. -->
+
+[![Watch the Xone film](website/public/assets/xone-narrative-poster.jpg)](https://pkscanvas.github.io/xone/#product)
 
 ### Product walkthrough · 72 seconds
 
-[![Watch the product walkthrough](website/public/assets/xone-product-demo-poster.jpg)](website/public/assets/xone-product-demo.mp4)
+<!-- Inline video: replace the preview link below with the GitHub attachment URL for xone-demo-readme.mp4. -->
+
+[![Watch the product walkthrough](website/public/assets/xone-product-demo-poster.jpg)](https://pkscanvas.github.io/xone/#product)
 
 Product-demo music: “Open Spaces” by Hybridas on [Uppbeat](https://uppbeat.io/c/hybridas). Third-party media retains its own rights; the source-code MIT license does not license the soundtrack for separate redistribution.
 
 ## Start reading
 
-1. Download `Xone_0.1.0_aarch64.dmg` from the release linked above. This package is for **Apple Silicon Macs**.
+1. Download `Xone_0.1.0_aarch64.dmg` using the download link above. This package is for **Apple Silicon Macs**.
 2. Open the DMG and drag **Xone** into **Applications**.
 3. Open Xone. If macOS blocks it, open **Apple menu → System Settings → Privacy & Security**, scroll to **Security**, and click **Open Anyway** for Xone. Follow the included **Read Me First** guide. The app is ad-hoc signed and is not notarized.
 4. In **Settings → AI**, connect a local server or save your cloud provider's API key and model.
