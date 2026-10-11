@@ -12,12 +12,12 @@ An AI-powered information harness that turns the daily flood of news into focuse
 
 Watch both videos on the [Xone website](https://pkscanvas.github.io/xone/#product).
 
-### The Xone film · 50 seconds
+### The Xone film
 
 https://github.com/user-attachments/assets/ea361bc9-467c-4df3-8886-b2da64fd4b76
 
 
-### Product walkthrough · 72 seconds
+### Product walkthrough
 
 https://github.com/user-attachments/assets/e4aa62cf-0d62-45a1-a079-01dd0b9cf221
 
@@ -56,7 +56,7 @@ These are planned, not shipped:
 
 ## Development
 
-Install Node.js 22.12+ and Rust with the platform prerequisites for Tauri v2. On macOS, install Xcode Command Line Tools.
+Install Node.js 22.12+ and Rust with the platform prerequisites for Tauri v2.
 
 ```sh
 npm ci
@@ -89,15 +89,11 @@ python3 scripts/package-source.py
 
 The installer is written to `src-tauri/target/release/bundle/dmg/`. It contains an ad-hoc-signed app, an Applications shortcut, and a visible first-launch guide. It is not notarized. Follow the included Privacy & Security → Open Anyway instructions.
 
-Upload the DMG to a GitHub Release, not the source tree. Enable GitHub Pages with GitHub Actions to deploy the website; its workflow fills in the current repository's links automatically.
-
 ## Data and credentials
 
 The app creates its SQLite database in the operating system's application-data directory. Source code and installers contain public source metadata and the three starter Xone definitions, not the developer's database, API keys, articles, reading history, or learned profiles.
 
 Provider keys are stored locally in SQLite, not in the system keychain. On macOS and Linux, the app restricts its data directory and database to the current user. Protect your application-data directory and backups. Cloud features send the relevant headlines, excerpts, briefs, and other required inputs to your selected provider. Local providers require a separately running local server.
-
-Never commit `.env` files, databases, private keys, or local tool settings. Build output and local media workspaces are ignored. Scan source and final release artifacts before publishing.
 
 ## License
 
